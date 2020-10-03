@@ -12,6 +12,7 @@ import YouTubeCompPage from "../pages/YouTubeCompPage/YouTubeCompPage";
 
 // Style
 import "./Home.css";
+import DetailPost from "../pages/BlogPost/DetailPost/DetailPost";
 
 class Home extends Component {
   state = {
@@ -36,6 +37,7 @@ class Home extends Component {
             <Link to="/youtube">YouTube</Link>
           </div>
           <Route path="/" exact component={BlogPost} />
+          <Route path="/detail-post/:id" component={DetailPost} />
           <Route path="/product" component={Product} />
           <Route path="/lifecycle" component={LifeCycleComp} />
           <Route path="/youtube" component={YouTubeCompPage} />
